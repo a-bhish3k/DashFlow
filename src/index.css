@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local(Poppins-Regular), url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: local(Poppins-Medium), url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Semibold";
+  src: local(Poppins-Semibold), url(./fonts/Poppins-SemiBold.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-regular), sans-serif !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --primary: #109cf1;
+  --secondary: #192a3e;
+  --yellow: #ffb946;
+  --red: #f7685b;
+  --green: #2ed47a;
+  --purple: #885af8;
+  --table-black: #323c47;
+  --table-gray: #707683;
+  --dark-blue: #334d6e;
+  --gray: #90a0b7;
+  --icon-gray: #c2cfe0;
+  --white: #ffffff;
+  --font-regular: "Poppins-Regular";
+  --font-medium: "Poppins-Medium";
+  --font-semibold: "Poppins-Semibold";
+}
+
+.login-page {
+  background-image: url(./assets/login-background.jpg);
+  background-size: cover;
+}
+
+.signup-page {
+  background-image: url(./assets/signup-background.jpg);
+  background-size: cover;
+}
+
+.login-container {
+  backdrop-filter: blur(4px);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+header {
+  background-color: var(--white);
+}
+
+.search {
+  font-size: 0.8em;
+}
+
+.search::placeholder {
+  color: var(--gray);
+}
+
+.side-bar {
+  height: 100vh;
+  width: 256px;
+}
+
+.profile-name {
+  font-size: 0.875em;
+  color: var(--secondary);
+  font-family: var(--font-medium), sans-serif !important;
+}
+
+.personal-email {
+  font-size: 0.688em;
+  color: var(--gray);
+  font-family: var(--font-medium), sans-serif !important;
+}
+
+.navigation li span {
+  font-family: var(--font-medium), sans-serif !important;
+  font-size: 0.9em;
+  color: var(--secondary);
+}
+
+.navigation li img {
+  width: 1.375em;
+  height: 1.375em;
+}
+
+#sidebar-toggle {
+  width: 68px;
+
+  .navigation li span,
+  .profile-name,
+  .personal-email {
+    display: none;
+  }
+}

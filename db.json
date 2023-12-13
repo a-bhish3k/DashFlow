@@ -1,0 +1,62 @@
+{
+  "userdata": [
+    {
+      "name": "Abhishek Kumar",
+      "email": "abhishek@gmail.com",
+      "password": "abhi123",
+      "number": "9912491088",
+      "country": "IN",
+      "state": "DL",
+      "city": "East Delhi",
+      "id": 1
+    },
+    {
+      "name": "John Wick",
+      "email": "john@wick.com",
+      "password": "john123",
+      "number": "488484",
+      "country": "US",
+      "state": "NY",
+      "city": "Mill Neck",
+      "id": 2
+    },
+    {
+      "name": "Bhupendra Jogi",
+      "email": "bhupendra@jogi.com",
+      "password": "jogi123",
+      "id": 3,
+      "country": "IN",
+      "state": "TN",
+      "city": "Chennai"
+    },
+    {
+      "name": "tana",
+      "email": "tany@gmail.com",
+      "password": "jk;fsaf",
+      "id": 4
+    }
+  ],
+  "productData": [
+    {
+      "name": "Mirror",
+      "price": 135,
+      "quantity": 4,
+      "color": "primary",
+      "id": 1
+    },
+    {
+      "name": "Laptop",
+      "price": 165,
+      "quantity": 12,
+      "color": "warning",
+      "id": 2
+    },
+    {
+      "name": "Car",
+      "price": "",
+      "quantity": "",
+      "color": "danger",
+      "id": 3
+    }
+  ]
+}
