@@ -1,22 +1,10 @@
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import axios from "axios";
 import { useFormik } from "formik";
-import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [loginData, setLoginData] = useState([]);
   const navigate = useNavigate();
-
-  const userData = async () => {
-    try {
-      let res = await axios.get("http://localhost:8000/userdata");
-      setLoginData(res.data);
-    } catch (err) {
-      console.log(err.message);
-    }
-  };
 
   const signup = useFormik({
     initialValues: {
@@ -24,17 +12,10 @@ const Login = () => {
       password: "",
     },
     onSubmit: (values) => {
-      loginData.forEach((e) => {
-        e.email == values.email && e.password == values.password
-          ? navigate("/dashboard", { replace: true })
-          : console.log("incorrect password");
-      });
+      navigate("/dashboard", { replace: true });
+      console.log(values);
     },
   });
-
-  useEffect(() => {
-    userData();
-  }, []);
 
   return (
     <>
